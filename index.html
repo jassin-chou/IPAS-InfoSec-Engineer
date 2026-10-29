@@ -450,7 +450,7 @@ function stopDrone() {
   d.g.gain.setTargetAtTime(0, t, .4); setTimeout(() => { d.oscs.forEach(o => o.stop()); d.lfo.stop(); }, 2500);
 }
 function tick() {
-  const c = actx; const night = css('--night') === '1'; const e8 = night ? .34 : .27;
+  const c = actx; const night = true; const e8 = .34; // night arrangement for both themes
   while (music.next < c.currentTime + .2) {
     const t = music.next, k = music.step % 48, loop = Math.floor(music.step / 48), bar = Math.floor(k / 6), s = k % 6;
     const [root, maj] = CH[bar]; const iv = maj ? [0, 7, 12, 16, 19, 12] : [0, 7, 12, 15, 19, 12];
