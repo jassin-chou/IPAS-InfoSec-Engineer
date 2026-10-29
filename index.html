@@ -58,8 +58,10 @@ button{font:inherit;color:inherit;cursor:pointer}
 .il-ring{font-family:var(--f-num);font-size:10.5px;font-weight:600;color:var(--ink-2);padding-left:4px;border-left:1px solid var(--line)}
 #labels.far .il-txt small,#labels.far .il-ring{display:none}
 #labels.far .il{padding:2px 8px 2px 3px}
-.nl{position:absolute;left:0;top:0;font-size:10.5px;font-weight:700;padding:0 7px;border-radius:999px;background:color-mix(in srgb,var(--paper) 88%,transparent);color:var(--ink-2);white-space:nowrap;will-change:transform;pointer-events:none;border:1px solid var(--line)}
-.nl.main{background:var(--accent);color:var(--accent-ink);border-color:var(--accent-2);font-size:12px;padding:1px 9px}
+.nl{position:absolute;left:0;top:0;font-size:11px;font-weight:700;letter-spacing:.02em;color:var(--ink);white-space:nowrap;will-change:transform;pointer-events:none;
+  text-shadow:0 0 2px var(--paper),0 0 2px var(--paper),1px 1px 0 var(--paper),-1px -1px 0 var(--paper),1px -1px 0 var(--paper),-1px 1px 0 var(--paper)}
+.nl.main{color:var(--accent);font-size:13px;font-weight:800;text-align:center;line-height:1.1;text-shadow:0 0 3px var(--paper),0 0 3px var(--paper),0 0 6px var(--paper),1px 1px 0 var(--paper),-1px -1px 0 var(--paper),1px -1px 0 var(--paper),-1px 1px 0 var(--paper)}
+.nl.main::after{content:"▼";display:block;font-size:9px;line-height:1}
 #labels.far .nl:not(.main){display:none}
 .bubble{position:absolute;left:0;top:0;max-width:240px;padding:8px 12px;border-radius:14px;background:var(--paper);border:2px solid var(--line);box-shadow:0 4px 0 var(--line-2),0 10px 24px var(--shadow);font-size:13px;line-height:1.5;will-change:transform;pointer-events:none;white-space:normal}
 .bubble b{font-family:var(--f-display)}
